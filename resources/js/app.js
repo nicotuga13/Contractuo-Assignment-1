@@ -2,8 +2,12 @@ require("./bootstrap");
 
 import Vue from "vue";
 import Root from "./components/Root";
+import router from "./router";
+import store from "./store";
 
 new Vue({
     el: "#app",
-    components: { Root }
+    router,
+    store,
+    components: { Root },
 });

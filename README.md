@@ -8,7 +8,7 @@ Below you’ll find some directions to setup the development environment and pro
 
 1. Setup your development environment;
 
-    - IDE of you choosing
+    - IDE of your choosing
     - PHP 8+
     - Composer
     - Node.JS
@@ -16,26 +16,38 @@ Below you’ll find some directions to setup the development environment and pro
 2. Checkout the current repository, install the dependencies with the following commands:
 
     - composer install
+    - php artisan passport:keys
     - npm install
 
 ### Project details
 
 The application is a basic Laravel application with Vuejs.
 
-In terms of UI, we have installed both:
+In terms of UI, we have installed and configured :
 
 -   <a href="https://tailwindcss.com/" target="_blank">Tailwindcss</a>
--   <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/" target="_blank">Bootstrap</a>
 
-Choose the one that you prefer.
+Feel free to use it or just use custom css.
 
-### Goal of the assignment
+### The assignment
 
--   The user needs to be able to create a single Todo daily entry.
+A user needs to be able to create tasks and view all the created tasks that belong to him/her.
 
 ### Requirements
 
--   Add a new Vue component inside the main Root.vue component.
--   The component needs to provide an input for the user to create the todo entry.
--   Add the corresponding backend logic to save a single todo entry into the database.
--   No relation between the user and the todo is required.
+#### Back end
+
+-   Only admin users can create a task, the check should happen on the route level.
+-   An exception should be thrown after 5 created tasks.
+
+#### Front end
+
+-   The application should have total of 3 pages.
+
+    -   Dashboard ( landing page, we provide that)
+    -   Index page for all tasks (you need to create )
+    -   A page to create a task (you need to create )
+
+-   Both pages need to be different vue components
+-   Once the task is created you need to push it into the vuex store
+-   The task index page needs to retrieve all the created tasks from the vuex store
