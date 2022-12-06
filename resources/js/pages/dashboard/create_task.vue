@@ -48,6 +48,7 @@ export default {
     },
 
     methods: {
+
         submit() {
             if (this.loaded) {
                 this.loaded = false;
@@ -60,9 +61,9 @@ export default {
                     this.success = true;
                     this.res = response.data;
                     //console.log(response.data);
-                    document.getElementById("response").innerHTML = response.data;
-                    
+                    document.getElementById("response").innerHTML = response.data;    
                 })
+
                 .catch(error => {
                     this.loaded = true;
                     //checks if input is invalid
@@ -74,12 +75,9 @@ export default {
                     if (error.response.status === 500) {
                         this.errors = error.response.data.errors || {};
                         document.getElementById("response").innerHTML = 'User Is Not An Admin!';
-
                     }
-
                 });
             }
-            
         },
     },
 };

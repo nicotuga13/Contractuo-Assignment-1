@@ -11,6 +11,7 @@ Vue.use(VueRouter);
  * You need to have the /overview/ as a prefix for any route you define.
  *
  */
+
 const routes = {
     mode: "history",
 

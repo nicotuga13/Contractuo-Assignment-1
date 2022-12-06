@@ -10,7 +10,7 @@ class ViewController extends Controller
     
     public function index()
     {
-        //returns array with the created Tasks. Currently only going to view_tasks
+        //returns array with the created Tasks
         $tasks = Task::with('user')->latest()->get()->toArray();
         return array_reverse($tasks);
     }

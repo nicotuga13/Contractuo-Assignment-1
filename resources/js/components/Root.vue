@@ -15,6 +15,7 @@
                 >
                     Logout
                 </button>
+                <!--Nav Links new pages-->
                 <router-link to="/overview/view_tasks" class="float-right bg-blue-400 hover:opacity-50 duration-300 text-white p-4" >View Tasks</router-link>
                 <router-link to="/overview/create_tasks" class="float-right bg-blue-400 hover:opacity-50 duration-300 text-white p-4" >Create Task</router-link>
             </div>

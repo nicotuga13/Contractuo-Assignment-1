@@ -17,8 +17,9 @@ Auth::routes();
 Route::prefix('overview')->middleware('auth')->group(function () {
 
     //uses middleware EnsureAdmin to check if user is an admin. If not can not create tasks
+    //route for Task Controller
     Route::resource('tasks', TaskController::class)->only(['index', 'store'])->middleware(EnsureAdmin::class);
-    
+    //route for View controller
     Route::get('view', [ViewController::class, 'index']);
 
     Route::get('/{any}', [HomeController::class, 'index'])->where('any', '.*');

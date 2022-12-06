@@ -1,4 +1,4 @@
-<!-- Blade File I used at first when trying to grasp everything-->
+<!-- Blade File I used at first when trying to grasp everything. No longer used-->
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>

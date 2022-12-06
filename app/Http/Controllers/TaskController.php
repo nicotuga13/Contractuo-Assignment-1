@@ -35,8 +35,6 @@ class TaskController extends Controller
      */
     public function store(Request $request)
     {
-        //What creates the tasks
-
         //grabs user data and assigns it to $user
         $user = Auth::user();
 

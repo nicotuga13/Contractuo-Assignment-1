@@ -13,6 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
+        //creates the tasks table with the specified columns
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->contrained()->cascadeOnDelete();

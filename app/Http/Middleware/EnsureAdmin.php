@@ -24,7 +24,6 @@ class EnsureAdmin
             return $next($request);
         }
         else{
-            //echo '<script>alert("Only Admins Can Create Tasks!")</script>';
             //return redirect('overview/dashboard');
         }
     }
