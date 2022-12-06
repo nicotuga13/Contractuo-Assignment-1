@@ -23,7 +23,6 @@
                 @if (Route::has('login'))
                     <a class="text-blue-400 hover:text-blue-600 duration-300 font-semibold p-2" href="{{ route('login') }}">{{ __('Login') }}</a>
                 @endif
-
                 @if (Route::has('register'))
                     <a class="text-blue-400 hover:text-blue-600 duration-300 font-semibold p-2" href="{{ route('register') }}">{{ __('Register') }}</a>
                 @endif
