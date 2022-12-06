@@ -8,7 +8,7 @@
                 <div class="flex justify-between items-center">
                     <div>
                         <span class="text-gray-800">{{task.user.name}}</span>
-                        <small class="ml-2 text-sm text-gray-600">{{ task.created_at }}</small>
+                        <small class="ml-2 text-sm text-gray-600">{{ new Date(task.created_at).toLocaleString() }}</small>
                     </div>
                 </div>
                 <p class="mt-4 text-lg text-gray-900">{{ task.task }}</p>
